@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0F08B4C4D7ECB86B6200FB /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B0DB6986570EF8833357F8 /* AmplifyModels.swift */; };
+		44ED5840EF91D6DB5D5E37A5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96706F484E6017EF8D4AA1AC /* Note.swift */; };
 		4BD1D71E2C20EDD2000BCD6F /* Golf_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D71D2C20EDD2000BCD6F /* Golf_AppApp.swift */; };
 		4BD1D7202C20EDD2000BCD6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D71F2C20EDD2000BCD6F /* ContentView.swift */; };
 		4BD1D7222C20EDD3000BCD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD1D7212C20EDD3000BCD6F /* Assets.xcassets */; };
@@ -14,6 +16,22 @@
 		4BD1D72F2C20EDD4000BCD6F /* Golf_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D72E2C20EDD4000BCD6F /* Golf_AppTests.swift */; };
 		4BD1D7392C20EDD4000BCD6F /* Golf_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D7382C20EDD4000BCD6F /* Golf_AppUITests.swift */; };
 		4BD1D73B2C20EDD4000BCD6F /* Golf_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D73A2C20EDD4000BCD6F /* Golf_AppUITestsLaunchTests.swift */; };
+		4BD1D74A2C20EE4E000BCD6F /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D7492C20EE4E000BCD6F /* NoteView.swift */; };
+		4BD1D74C2C20EE7D000BCD6F /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D74B2C20EE7D000BCD6F /* NotesView.swift */; };
+		4BD1D74F2C20F4D7000BCD6F /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD1D74E2C20F4D7000BCD6F /* Amplify */; };
+		4BD1D7522C20F757000BCD6F /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD1D7512C20F757000BCD6F /* AWSCognitoAuthPlugin */; };
+		4BD1D7552C20F7ED000BCD6F /* AuthenticationService.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D7542C20F7ED000BCD6F /* AuthenticationService.swift .swift */; };
+		4BD1D7572C20F80A000BCD6F /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D7562C20F80A000BCD6F /* LandingView.swift */; };
+		4BD1D7592C20FF4A000BCD6F /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD1D7582C20FF4A000BCD6F /* AWSAPIPlugin */; };
+		4BD1D75B2C20FF8D000BCD6F /* NotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D75A2C20FF8D000BCD6F /* NotesService.swift */; };
+		4BD1D75D2C20FFE0000BCD6F /* SaveNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D75C2C20FFE0000BCD6F /* SaveNoteView.swift */; };
+		4BD1D75F2C2100E1000BCD6F /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4BD1D75E2C2100E1000BCD6F /* AWSS3StoragePlugin */; };
+		4BD1D7612C21011E000BCD6F /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D7602C21011E000BCD6F /* StorageService.swift */; };
+		4BD1D7632C210139000BCD6F /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D7622C210139000BCD6F /* RemoteImage.swift */; };
+		4BD1D7652C21019A000BCD6F /* PicturePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD1D7642C21019A000BCD6F /* PicturePicker.swift */; };
+		A10039C38E1087D40E1C45FD /* Note+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C238117988134655A3B3BE1 /* Note+Schema.swift */; };
+		B6AF3BB854D428159C7D8EA6 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 12D524456F93CF6DA60F0FBD /* amplifyconfiguration.json */; };
+		FDA87233030C647E6F50D9F1 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E51C4C9332B95050B0E863C8 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12D524456F93CF6DA60F0FBD /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		4BD1D71A2C20EDD2000BCD6F /* Golf App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golf App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD1D71D2C20EDD2000BCD6F /* Golf_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Golf_AppApp.swift; sourceTree = "<group>"; };
 		4BD1D71F2C20EDD2000BCD6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +63,20 @@
 		4BD1D7342C20EDD4000BCD6F /* Golf AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Golf AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD1D7382C20EDD4000BCD6F /* Golf_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Golf_AppUITests.swift; sourceTree = "<group>"; };
 		4BD1D73A2C20EDD4000BCD6F /* Golf_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Golf_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BD1D7492C20EE4E000BCD6F /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		4BD1D74B2C20EE7D000BCD6F /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		4BD1D7532C20F771000BCD6F /* Golf-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Golf-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4BD1D7542C20F7ED000BCD6F /* AuthenticationService.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationService.swift .swift"; sourceTree = SOURCE_ROOT; };
+		4BD1D7562C20F80A000BCD6F /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		4BD1D75A2C20FF8D000BCD6F /* NotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesService.swift; sourceTree = "<group>"; };
+		4BD1D75C2C20FFE0000BCD6F /* SaveNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveNoteView.swift; sourceTree = "<group>"; };
+		4BD1D7602C21011E000BCD6F /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		4BD1D7622C210139000BCD6F /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		4BD1D7642C21019A000BCD6F /* PicturePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturePicker.swift; sourceTree = "<group>"; };
+		8C238117988134655A3B3BE1 /* Note+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Note+Schema.swift"; path = "amplify/generated/models/Note+Schema.swift"; sourceTree = "<group>"; };
+		96706F484E6017EF8D4AA1AC /* Note.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Note.swift; path = amplify/generated/models/Note.swift; sourceTree = "<group>"; };
+		E51C4C9332B95050B0E863C8 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		F0B0DB6986570EF8833357F8 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD1D7592C20FF4A000BCD6F /* AWSAPIPlugin in Frameworks */,
+				4BD1D74F2C20F4D7000BCD6F /* Amplify in Frameworks */,
+				4BD1D7522C20F757000BCD6F /* AWSCognitoAuthPlugin in Frameworks */,
+				4BD1D75F2C2100E1000BCD6F /* AWSS3StoragePlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +115,9 @@
 				4BD1D72D2C20EDD4000BCD6F /* Golf AppTests */,
 				4BD1D7372C20EDD4000BCD6F /* Golf AppUITests */,
 				4BD1D71B2C20EDD2000BCD6F /* Products */,
+				52E298A511C5A5092FF373F5 /* AmplifyConfig */,
+				4BD1D7502C20F757000BCD6F /* Frameworks */,
+				87E28715CB0170D204BC3F6C /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +134,18 @@
 		4BD1D71C2C20EDD2000BCD6F /* Golf App */ = {
 			isa = PBXGroup;
 			children = (
+				4BD1D7532C20F771000BCD6F /* Golf-App-Info.plist */,
 				4BD1D71D2C20EDD2000BCD6F /* Golf_AppApp.swift */,
+				4BD1D7642C21019A000BCD6F /* PicturePicker.swift */,
+				4BD1D7602C21011E000BCD6F /* StorageService.swift */,
+				4BD1D7622C210139000BCD6F /* RemoteImage.swift */,
+				4BD1D75C2C20FFE0000BCD6F /* SaveNoteView.swift */,
+				4BD1D75A2C20FF8D000BCD6F /* NotesService.swift */,
+				4BD1D7542C20F7ED000BCD6F /* AuthenticationService.swift .swift */,
+				4BD1D7562C20F80A000BCD6F /* LandingView.swift */,
 				4BD1D71F2C20EDD2000BCD6F /* ContentView.swift */,
+				4BD1D7492C20EE4E000BCD6F /* NoteView.swift */,
+				4BD1D74B2C20EE7D000BCD6F /* NotesView.swift */,
 				4BD1D7212C20EDD3000BCD6F /* Assets.xcassets */,
 				4BD1D7232C20EDD3000BCD6F /* Preview Content */,
 			);
@@ -127,6 +177,32 @@
 			path = "Golf AppUITests";
 			sourceTree = "<group>";
 		};
+		4BD1D7502C20F757000BCD6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52E298A511C5A5092FF373F5 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				E51C4C9332B95050B0E863C8 /* awsconfiguration.json */,
+				12D524456F93CF6DA60F0FBD /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		87E28715CB0170D204BC3F6C /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				F0B0DB6986570EF8833357F8 /* AmplifyModels.swift */,
+				8C238117988134655A3B3BE1 /* Note+Schema.swift */,
+				96706F484E6017EF8D4AA1AC /* Note.swift */,
+			);
+			name = AmplifyModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +219,12 @@
 			dependencies = (
 			);
 			name = "Golf App";
+			packageProductDependencies = (
+				4BD1D74E2C20F4D7000BCD6F /* Amplify */,
+				4BD1D7512C20F757000BCD6F /* AWSCognitoAuthPlugin */,
+				4BD1D7582C20FF4A000BCD6F /* AWSAPIPlugin */,
+				4BD1D75E2C2100E1000BCD6F /* AWSS3StoragePlugin */,
+			);
 			productName = "Golf App";
 			productReference = 4BD1D71A2C20EDD2000BCD6F /* Golf App.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +297,9 @@
 				Base,
 			);
 			mainGroup = 4BD1D7112C20EDD2000BCD6F;
+			packageReferences = (
+				4BD1D74D2C20F4D7000BCD6F /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			productRefGroup = 4BD1D71B2C20EDD2000BCD6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +318,8 @@
 			files = (
 				4BD1D7252C20EDD3000BCD6F /* Preview Assets.xcassets in Resources */,
 				4BD1D7222C20EDD3000BCD6F /* Assets.xcassets in Resources */,
+				FDA87233030C647E6F50D9F1 /* awsconfiguration.json in Resources */,
+				B6AF3BB854D428159C7D8EA6 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +344,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD1D7652C21019A000BCD6F /* PicturePicker.swift in Sources */,
 				4BD1D7202C20EDD2000BCD6F /* ContentView.swift in Sources */,
+				4BD1D7612C21011E000BCD6F /* StorageService.swift in Sources */,
 				4BD1D71E2C20EDD2000BCD6F /* Golf_AppApp.swift in Sources */,
+				4BD1D75D2C20FFE0000BCD6F /* SaveNoteView.swift in Sources */,
+				4BD1D7572C20F80A000BCD6F /* LandingView.swift in Sources */,
+				4BD1D75B2C20FF8D000BCD6F /* NotesService.swift in Sources */,
+				4BD1D7632C210139000BCD6F /* RemoteImage.swift in Sources */,
+				4BD1D74C2C20EE7D000BCD6F /* NotesView.swift in Sources */,
+				4BD1D7552C20F7ED000BCD6F /* AuthenticationService.swift .swift in Sources */,
+				4BD1D74A2C20EE4E000BCD6F /* NoteView.swift in Sources */,
+				3E0F08B4C4D7ECB86B6200FB /* AmplifyModels.swift in Sources */,
+				A10039C38E1087D40E1C45FD /* Note+Schema.swift in Sources */,
+				44ED5840EF91D6DB5D5E37A5 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +524,7 @@
 				DEVELOPMENT_TEAM = WB4V77ZK9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Golf-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +554,7 @@
 				DEVELOPMENT_TEAM = WB4V77ZK9V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Golf-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +689,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BD1D74D2C20F4D7000BCD6F /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.35.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BD1D74E2C20F4D7000BCD6F /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD1D74D2C20F4D7000BCD6F /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		4BD1D7512C20F757000BCD6F /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD1D74D2C20F4D7000BCD6F /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		4BD1D7582C20FF4A000BCD6F /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD1D74D2C20F4D7000BCD6F /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		4BD1D75E2C2100E1000BCD6F /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BD1D74D2C20F4D7000BCD6F /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BD1D7122C20EDD2000BCD6F /* Project object */;
 }

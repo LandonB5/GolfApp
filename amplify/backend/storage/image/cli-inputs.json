@@ -1,0 +1,14 @@
+{
+  "resourceName": "image",
+  "policyUUID": "c58bd2e5",
+  "bucketName": "golfapp569f2999860749708aca707f4355778b",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

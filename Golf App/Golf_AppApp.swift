@@ -1,17 +1,30 @@
-//
-//  Golf_AppApp.swift
-//  Golf App
-//
-//  Created by Landon Burchill on 6/17/24.
-//
-
+import Amplify
+import AWSAPIPlugin
+import AWSCognitoAuthPlugin
+import AWSS3StoragePlugin
 import SwiftUI
 
 @main
 struct Golf_AppApp: App {
+    init() {
+        do {
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: AmplifyModels()))
+            try Amplify.add(plugin: AWSS3StoragePlugin())
+            try Amplify.configure()
+            print("Initialized Amplify");
+        } catch {
+            print("Could not initialize Amplify: \(error)")
+        }
+    }
+
+   
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView()
+                .environmentObject(NotesService())
+                .environmentObject(AuthenticationService())
+                .environmentObject(StorageService())
         }
     }
 }
