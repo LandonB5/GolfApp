@@ -6,6 +6,16 @@
     "defaultAuthType": {
       "mode": "AMAZON_COGNITO_USER_POOLS",
       "cognitoUserPoolId": "authgolfapp1cf00a82"
-    }
+    },
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "NONE"
+      }
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      }
+    ]
   }
 }
