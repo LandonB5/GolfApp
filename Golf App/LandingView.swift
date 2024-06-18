@@ -4,6 +4,7 @@ import AuthenticationServices
 struct LandingView: View {
     @EnvironmentObject private var authenticationService: AuthenticationService
     @State private var isLoading = true
+    @State private var isSignedIn = false
 
     var body: some View {
         NavigationView {
@@ -20,9 +21,24 @@ struct LandingView: View {
                             .font(.system(size: 36, weight: .regular, design: .default))
                             .multilineTextAlignment(.center)
                             .padding(.bottom, 40)
-                        if authenticationService.isSignedIn {
-                            NavigationLink(destination: NotesView()) {
-                                Text("Get Started!")
+                        
+                        if isSignedIn {
+                            Button("Sign Out") {
+                                Task {
+                                    await authenticationService.signOut()
+                                    isSignedIn = false
+                                }
+                            }
+                            .font(.system(size: 24, weight: .regular, design: .default))
+                            .padding()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.black, lineWidth: 1)
+                            )
+                            .padding(.bottom, 20)
+
+                            NavigationLink(destination: SecondView()) {
+                                Text("Continue")
                                     .font(.system(size: 24, weight: .regular, design: .default))
                                     .padding()
                                     .overlay(
@@ -31,9 +47,12 @@ struct LandingView: View {
                                     )
                             }
                         } else {
-                            Button("Sign in") {
+                            Button("Get Started!") {
                                 Task {
                                     await authenticationService.signIn(presentationAnchor: window)
+                                    if authenticationService.isSignedIn {
+                                        isSignedIn = true
+                                    }
                                 }
                             }
                             .font(.system(size: 24, weight: .regular, design: .default))
@@ -55,8 +74,8 @@ struct LandingView: View {
             .task {
                 isLoading = true
                 await authenticationService.fetchSession()
-                if !authenticationService.isSignedIn {
-                    await authenticationService.signIn(presentationAnchor: window)
+                if authenticationService.isSignedIn {
+                    isSignedIn = true
                 }
                 isLoading = false
             }
@@ -72,7 +91,13 @@ struct LandingView: View {
     }
 }
 
-
+struct SecondView: View {
+    var body: some View {
+        Text("Welcome to the Second Page")
+            .font(.largeTitle)
+            .padding()
+    }
+}
 
 struct LandingView_Previews: PreviewProvider {
     static var previews: some View {
