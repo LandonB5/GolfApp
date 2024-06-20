@@ -65,7 +65,7 @@ struct LandingView: View {
                         Spacer()
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Color.green)
+                    .background(Color.blue)
                     .navigationBarHidden(true)
                     .opacity(isLoading ? 0.5 : 1)
                     .disabled(isLoading)

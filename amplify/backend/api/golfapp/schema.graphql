@@ -4,3 +4,11 @@ type Note @model @auth(rules: [{allow: owner}]) {
   description: String
   image: String
 } 
+type UserProfile @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  name: String!
+  email: String!
+  age: Int
+  bio: String
+  photoURL: String
+}
