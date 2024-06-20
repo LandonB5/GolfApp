@@ -14,7 +14,7 @@ struct LandingView: View {
                 } else {
                     VStack {
                         Spacer()
-                        Text("FourSome")
+                        Text("ForeSome")
                             .font(.system(size: 48, weight: .regular, design: .default))
                             .padding(.bottom, 20)
                         Text("Elevate\nYour\nGame")
