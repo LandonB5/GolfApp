@@ -33,7 +33,7 @@ struct LandingView: View {
                             .padding()
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.pink, lineWidth: 1)
+                                    .stroke(Color.yellow, lineWidth: 1)
                             )
                             .padding(.bottom, 20)
 
